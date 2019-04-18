@@ -33,15 +33,20 @@ class Test(TestCase):
         self.click("id=>chooseUpdatefile")
         self.sleep(5)
         os.system(r'E:\text.exe "E:\install.log"')
-        self.sleep(10)
+        self.sleep(2)
         self.click("id=>Updateadd")
         self.sleep(5)
+        self.click("link_text=>确定")
+        self.sleep(5)
+      #  self.close()
 
     def test_TaskManagement(self):
-        Test.login(self)
+       # Test.login(self)
         self.click("link_text=>任务管理")
         self.click("link_text=>补丁任务")
+        self.sleep(5)
         self.click("id=>btnAdd")
+        self.sleep(5)
         self.click("id=>strategySelecting")
 
 

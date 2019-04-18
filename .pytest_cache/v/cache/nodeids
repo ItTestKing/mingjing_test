@@ -1,3 +1,4 @@
 [
-  "mingjing/Mingjing_case.py::BaiduTest::test_AssetManagement"
+  "mingjing/Mingjing_case.py::Test::test_AssetManagement",
+  "mingjing/Mingjing_case.py::Test::test_TaskManagement"
 ]
