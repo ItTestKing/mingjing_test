@@ -17,6 +17,7 @@ class BaiduTest(TestCase):
     def test_case(self):
         """ baidu search key : pyse """
         self.open("https://www.baidu.com/")
+        self.max_window()
         self.move_to_element("link_text=>设置")
         self.click("link_text=>搜索设置")
         self.select("#nr", '20')
@@ -25,7 +26,9 @@ class BaiduTest(TestCase):
         self.assertAlert("已经记录下您的使用偏好")
         self.accept_alert()
 
+
     """
+    
     used parameterized test
     """
     @parameterized.expand([
@@ -36,10 +39,19 @@ class BaiduTest(TestCase):
     def test_baidu(self,name,search_key):
         ''' baidu search key : pyse '''
         self.open("https://www.baidu.com")
+        self.max_window()
         self.clear("id=>kw")
         self.type("id=>kw", search_key)
+        self.sleep(5)
         self.click("css=>#su")
         self.assertTitle(search_key)
+
+    def test_mingjing(self):
+        self.open("https://192.168.0.172")
+        self.max_window()
+        self.sleep(10)
+
+
 
 
 if __name__ == '__main__':
