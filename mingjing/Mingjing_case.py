@@ -14,11 +14,11 @@ class Test(TestCase):
 
 
     def login(self):
-        self.open("https://192.168.0.208")
+        self.open("https://192.168.0.238")
         self.max_window()
         self.sleep(5)
-        self.type("id=>accountName","test@test")
-        self.type("id=>password","realsoi..123")
+        self.type("id=>accountName","2@2")
+        self.type("id=>password","2WXeRM")
         self.sleep(2)
         self.click("xpath=>//*[@id='loginform']/fieldset/div[3]/button")
         self.sleep(5)
@@ -32,7 +32,7 @@ class Test(TestCase):
         self.sleep(2)
         self.click("id=>chooseUpdatefile")
         self.sleep(5)
-        os.system(r'E:\text.exe "E:\install.log"')
+        os.system(r'E:\明镜.exe "E:\LongBright-V2.1.0 B30.zip"')
         self.sleep(2)
         self.click("id=>Updateadd")
         self.sleep(5)

@@ -1,4 +1,6 @@
 {
+  "demo/test_case.py::BaiduTest::test_case": true,
+  "demo/test_case.py::BaiduTest::test_mingjing": true,
   "mingjing/Mingjing_case.py::BaiduTest::test_login": true,
   "mingjing/Mingjing_case.py::BaiduTest::test_mingjing_0": true,
   "mingjing/Mingjing_case.py::BaiduTest::test_mingjing_1": true
